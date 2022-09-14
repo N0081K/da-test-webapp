@@ -7,7 +7,7 @@ info:
   license:
     name: MIT
     url: https://github.com/czechitas-ostrava/registration-app/blob/master/LICENSE
-host: czechitas-app.kutac.cz
+host: cz-test-jedna.herokuapp.com
 basePath: /api/
 schemes:
 - https
@@ -846,3 +846,4 @@ definitions:
       note_private:
         type: string
         format: markdown
+
