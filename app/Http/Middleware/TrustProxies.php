@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace CzechitasApp\Http\Middleware;
 
-use Fideloper\Proxy\TrustProxies as Middleware;
+use Illuminate\Http\Middleware\TrustProxies as Middleware;
 use Illuminate\Http\Request;
 
 class TrustProxies extends Middleware
@@ -12,7 +12,7 @@ class TrustProxies extends Middleware
     /**
      * The trusted proxies for this application.
      *
-     * @var string
+     * @var array<mixed>
      */
     protected $proxies = '*';
 
@@ -21,5 +21,5 @@ class TrustProxies extends Middleware
      *
      * @var int
      */
-    protected $headers = Request::HEADER_X_FORWARDED_PROTO;
+    protected $headers = Request::HEADER_X_FORWARDED_AWS_ELB;
 }

@@ -345,7 +345,7 @@
 	"variable": [
 		{
 			"key": "baseUrl",
-			"value": "https://czechitas.loc"
+			"value": "https://cz-test-jedna.herokuapp.com"
 		},
 		{
 			"key": "authToken",
